@@ -1,0 +1,240 @@
+body {
+    background-color: rgb(6, 4, 5);
+    padding: 0;
+    margin: 0;
+}
+
+.imageContainer {
+    position: relative;
+    float: left;
+}
+
+
+/* Select boxes */
+.selectBox {
+    position: relative;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 4rem;
+    display: flex;
+flex-direction: column;
+color: rgb(222, 203, 203);
+
+}
+
+select {
+    
+    position: relative;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 1rem;
+    background-color: rgb(66, 63, 68);
+    color: rgb(206, 199, 199);
+    padding: 2px 8px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.restore {
+    font-size: 17px;
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 1rem;
+    background-color: rgb(66, 63, 68);
+    color: rgb(206, 199, 199);
+    padding: 2px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* hide ammo and armor selections */
+#armor{
+display: none;
+margin-left: 5px;
+}
+
+#cartridge{
+display: none;
+margin-left: 5px;
+}
+
+.healthScreen {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+label {
+    padding-bottom: 5px;
+
+}
+
+
+.healthBar {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    text-align: center;
+    position: relative;
+    color: rgb(235, 225, 225);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(111, 110, 110);
+    border-radius: 2px;
+    width: 11rem;
+    height: .9rem;
+    text-align: center;
+    line-height: 15px;
+    transition: .1s ease
+}
+
+.healthBar:hover {
+    filter: brightness(110%);
+    transition: .1s ease
+} 
+
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+
+.ammoCounter {
+    margin-left: 5px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(66, 63, 68);
+    color: rgb(206, 199, 199);
+    border-radius: 6px;
+}
+
+.healthCount{
+    opacity: .7;
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    bottom: 14rem;
+    right: 5.3rem;
+}
+
+.fa-star-of-life{
+    position: relative;
+    font-size: 40px;
+    margin-right: 1rem;
+    transition: .4s ease;
+}
+
+.displayHp {
+    position: absolute;
+    float: right;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+}
+
+#totalHp{
+    line-height: 3.5rem;
+}
+
+
+.progress {
+    border-radius: 10px;
+    height: 20px;
+    width: 300px;
+}
+
+.progress-done {
+    opacity: .8; 
+    background-image: repeating-linear-gradient(rgb(14, 167, 14),rgb(4, 67, 4));
+    position: absolute;
+    width: 100%;
+    border-radius: 1px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    transition:    .8s ease;
+}
+
+.btnHealth {
+    position: relative;
+}
+
+.countContainer{
+display: flex;
+flex-direction: row;
+/* justify-content: center; */
+align-items: center;
+margin-bottom: 1rem;
+}
+
+.logo{
+position: relative;
+bottom: 30rem;
+left: 45rem;
+}
+
+/* Buttons */
+#headBtn{
+    text-decoration: none;
+    position: absolute;
+    top: 99px;
+    left: 530px;
+    width: 11rem;
+    height: .9rem;
+}
+
+#thoraxBtn{
+    position: absolute;
+    top: 243px;
+    left: 345px;
+    width: 11rem;
+    height: .9rem;
+}
+
+#stomachBtn{
+    position: absolute;
+    top: 363px;
+    left: 345px;
+    width: 11rem;
+    height: .9rem;
+}
+
+#leftArmBtn{
+    position: absolute;
+    top: 363px;
+    left: 600px;
+    width: 11rem;
+    height: .9rem;
+}
+
+#rightArmBtn{
+    position: absolute;
+    top: 363px;
+    left: 96px;
+    width: 11rem;
+    height: .9rem;
+}
+
+#leftLegBtn{
+    position: absolute;
+    top: 600px;
+    left: 523px;
+    width: 11rem;
+    height: .9rem;
+}
+
+#rightLegBtn{
+    position: absolute;
+    top: 600px;
+    left: 168px;
+    width: 11rem;
+    height: .9rem;
+}
+

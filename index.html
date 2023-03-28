@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a80c11d839.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- div to contain the image,health bars, and health pool -->
+    <div class="imageContainer">
+        <img class="healthScreen" src="HealthOverview2.0.jpg" alt="" width="700" height="1000">
+        <a class="healthBar" id="headBtn" href="#"><div class="progress-done" id="head"></div><div class="btnHealth" id="headBtnHealth"></div></a>
+        <a class="healthBar" id="thoraxBtn" href="#"><div class="progress-done" id="thorax"></div><div class="btnHealth" id="thoraxBtnHealth"></div></a>
+        <a class="healthBar" id="leftArmBtn" href="#"><div class="progress-done" id="leftArm"></div><div class="btnHealth" id="leftArmBtnHealth"></div></a>
+        <a class="healthBar" id="rightArmBtn" href="#"><div class="progress-done" id="rightArm"></div><div class="btnHealth" id="rightArmBtnHealth"></div></a>
+        <a class="healthBar" id="stomachBtn" href="#"><div class="progress-done" id="stomach"></div><div class="btnHealth" id="stomachBtnHealth"></div></a>
+        <a class="healthBar" id="leftLegBtn" href="#"><div class="progress-done" id="leftLeg"></div><div class="btnHealth" id="leftLegBtnHealth"></div></a>
+        <a class="healthBar" id="rightLegBtn" href="#"><div class="progress-done" id="rightLeg"></div><div class="btnHealth" id="rightLegBtnHealth"></div></a>
+        <!-- div containg star icon and healthpool -->
+        <div class="healthCount">
+
+                <i class="fa-sharp fa-solid fa-star-of-life" id="star"></i>
+                <p class="displayHp" id="totalHp">4</p>
+       
+        </div>
+                <!-- LOGO -->
+ <img class="logo" src="escape-from-tarkov-logo-11563187295owl0loeixb.png" alt="">
+    </div>
+    <!-- div containg select box for ammo and armor-->
+        <div class="selectBox">
+            <div class="selection_one">
+                <label for="caliberSelect"> <i class="fa-solid fa-gun"></i></label>
+                <!-- select for caliber -->
+                <select name="caliberSelect" id="caliber">
+                        <option value="select" selected>--Select Caliber--</option>
+                        <option value="12x70">12x70mm</option>
+                        <option value=".45 ACP">.45 ACP</option>
+                        <option value="5.56 Nato">5.56 NATO</option>
+                        <option value="9x19">9x19 Parabellum</option>
+                </select>
+                <!-- select for cartridge -->
+                <select name="cartridgeSelect" id="cartridge">
+                    <option value=""></option>
+                </select>
+            </div>
+                <!-- select for armor -->
+           <div class="selection_two">
+            <label for="armorClassSelect"> <i class="fa-solid fa-shield-halved"></i></label>
+                <select name="armorClassSelect" id="armorClass">
+                    <option value="select" selected>--Select Armor Type--</option>
+                    <option value="class 2" >Class 2</option>
+                    <option value="class 3" >Class 3</option>
+                    <option value="class 4" >Class 4</option>
+                    <option value="class 5" >Class 5</option>
+                    <option value="class 6" >Class 6</option>
+                    <option value="none">None</option>
+                </select>
+                <select name="armorSelect" id="armor">
+                </select>
+           </div>
+            <!-- counter div -->
+            <div class="countContainer">
+                <i class="fa-solid fa-bullseye"></i>
+                <div class="ammoCounter"> 
+                    <p id="count"></p>
+                </div>
+            </div>
+            <!-- refresh -->
+            <div> <i class="fa-solid fa-arrows-rotate"></i>
+                <button class="restore" id="restoreBtn">Restore Health & Armor</button>
+            </div>
+        </div>
+</body>
+<script src="code.js"></script>
+</html>
